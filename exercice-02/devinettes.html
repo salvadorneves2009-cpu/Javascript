@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devinette</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" >
+   
+        <form id="form">
+            <label>Plage du secret (Min - Max) :</label><br>
+            <input type="text" class="form-control" id="plageMin" value="1"> à
+            <input type="text" class="form-control" id="plageMax" value="100"><br><br>
+
+            <label for="essaisMax">Nombre d'essais autorisés :</label><br>
+            <input type="text" class="form-control" id="essaisMax" value="5"><br><br>
+
+            <label for="proposition">Votre proposition :</label><br>
+            <input type="text" class="form-control" id="proposition"><br><br>
+
+            <button class="btn btn-primary" id="btnValider">Valider la proposition</button>
+        </form>
+
+        <div id="error" margin-top: 10px;></div>
+        
+        <div id="statut" margin-top: 10px; ></div>
+    </div>
+
+
+
+
+    <script src="devinettes.js"></script>
+</body>
+
+</html>
